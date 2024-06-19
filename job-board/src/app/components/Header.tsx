@@ -3,7 +3,7 @@ import Link from "next/link";
 function Header() {
   return (
     <header>
-      <div className="flex justify-between items-center px-6 py-4 container w-full mx-auto">
+      <div className="flex justify-between items-center px-6 py-4 w-full mx-auto">
         <Link href={"/"} className="font-bold text-xl">
           Job Board
         </Link>

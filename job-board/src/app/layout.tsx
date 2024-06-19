@@ -4,7 +4,6 @@ import Header from "./components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -13,8 +12,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header/>
-        {children}
+        <main className="py-4 px-6 container mx-auto">
+          <Header />
+          {children}
+        </main>
       </body>
     </html>
   );
